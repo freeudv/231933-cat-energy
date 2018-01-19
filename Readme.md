@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Dmitry Umbras](https://up.htmlacademy.ru/adaptive/13/user/231933).
-* Наставник: `Неизвестно`.
+* Наставник: `Без наставника`.
 
 ---
 
@@ -9,7 +9,7 @@
 
 Полезный файл:
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+* [Contributing.md](Contributing.md) — руководство по внесению изменений.
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
