@@ -1,0 +1,40 @@
+.indicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.indicator__btn {
+  display: block;
+
+  font-family: $font-stack-headers;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.indicator__line {
+  position: relative;
+  width: 82px;
+  height: 12px;
+  background-color: $bg-white;
+  border: 1px solid $border-gray;
+  border-radius: 7px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 35px;
+    height: 6px;
+    background-color: $accent-color;
+    border-radius: 3px;
+  }
+}

@@ -1,0 +1,19 @@
+@import './global/normalize';
+@import './global/fonts';
+@import './global/variables';
+@import './global/mixins';
+@import './global/typography';
+
+@import './blocks/btn';
+@import './blocks/logo';
+@import './blocks/page-header';
+@import './blocks/main-nav';
+@import './blocks/promo';
+@import './blocks/offers.scss';
+@import './blocks/how-to.scss';
+@import './blocks/demo.scss';
+@import './blocks/indicator.scss';
+@import './blocks/contacts.scss';
+@import './blocks/page-footer.scss';
+@import './blocks/social.scss';
+@import './blocks/copyright.scss';
