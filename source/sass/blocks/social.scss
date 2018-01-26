@@ -6,6 +6,7 @@
 }
 
 .social__list {
+  @include ul;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

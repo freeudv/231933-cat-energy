@@ -1,0 +1,30 @@
+.show-more {
+  padding: 27px 0 25px;
+  text-align: center;
+}
+
+.show-more__wrapper {
+  @include container;
+}
+
+.show-more__title {
+  margin-bottom: 10px;
+  padding-top: 60px;
+  font-family: $font-stack-headers;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.show-more__text {
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.show-more__link {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $bg-gray;
+  color: $text-btn;
+}

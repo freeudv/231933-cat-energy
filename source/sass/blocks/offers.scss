@@ -9,6 +9,7 @@
 }
 
 .offers__list {
+  @include ul;
 }
 
 .offers__item {

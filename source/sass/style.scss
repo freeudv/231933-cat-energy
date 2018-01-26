@@ -1,13 +1,17 @@
+// global settings
 @import './global/normalize';
 @import './global/fonts';
 @import './global/variables';
 @import './global/mixins';
 @import './global/typography';
 
+// common blocks
 @import './blocks/btn';
 @import './blocks/logo';
 @import './blocks/page-header';
 @import './blocks/main-nav';
+
+//index sections
 @import './blocks/promo';
 @import './blocks/offers.scss';
 @import './blocks/how-to.scss';
@@ -17,3 +21,10 @@
 @import './blocks/page-footer.scss';
 @import './blocks/social.scss';
 @import './blocks/copyright.scss';
+
+//catalog sections
+@import './blocks/catalog.scss';
+@import './blocks/item-table.scss';
+@import './blocks/show-more.scss';
+@import './blocks/addition.scss';
+@import './blocks/request.scss';

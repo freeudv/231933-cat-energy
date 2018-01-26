@@ -1,0 +1,14 @@
+.item-table {
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-dark;
+}
+
+.item-table__name {
+  text-align-last: left;
+}
+
+.item-table__value {
+  text-align: right;
+}
