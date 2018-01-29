@@ -43,3 +43,37 @@
 .main-nav__logo {
   border-bottom: 1px solid $border-gray;
 }
+
+@media #{$tablet-widths} {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 515px;
+  }
+
+  .main-nav__item {
+    margin-right: 37px;
+    border-bottom: 0;
+  }
+
+  .main-nav__item:last-child {
+    margin-right: 0;
+  }
+
+  .main-nav__logo {
+    border-bottom: 0;
+  }
+}

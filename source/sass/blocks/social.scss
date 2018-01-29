@@ -32,3 +32,10 @@
 
 .social__link--facebook {
 } */
+
+@media #{$tablet-widths} {
+  .social {
+    margin-bottom: 0;
+    border: 0;
+  }
+}

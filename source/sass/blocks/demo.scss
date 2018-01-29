@@ -60,3 +60,58 @@
 .demo__img {
   margin-bottom: 30px;
 }
+
+@media #{$tablet-widths} {
+  .demo {
+    padding: 50px 0 60px;
+    background-color: $bg-white;
+  }
+
+  .demo__title {
+    margin-bottom: 70px;
+  }
+
+  .demo__text {
+    margin-bottom: 55px;
+    padding-right: 10px;
+  }
+
+  .demo__stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .demo__counter {
+    width: 370px;
+  }
+
+  .demo__index {
+    width: 160px;
+    padding: 20px 0;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .demo__index b {
+    width: 140px;
+    bottom: -10px;
+    padding: 0;
+    background-color: $bg-white;
+    transform: translateX(-50%);
+  }
+
+  .demo__cost {
+    width: 190px;
+    line-height: 28px;
+    text-align: right;
+  }
+
+  .demo__img {
+    width: 677px;
+    height: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

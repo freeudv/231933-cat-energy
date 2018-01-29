@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: $bg-white;
+  text-align: center;
 }
 
 .promo__wrapper {
@@ -22,4 +23,30 @@
 
 .promo__img {
   margin-bottom: 10px;
+}
+
+@media #{$tablet-widths} {
+  .promo {
+    background-image: none;
+    color: $text-black;
+  }
+
+  .promo__wrapper {
+    padding-left: 90px;
+    text-align: left;
+  }
+
+  .promo__title {
+    padding-right: 195px;
+    margin-bottom: 40px;
+  }
+
+  .promo__subtitle {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  .promo__link {
+    width: 248px;
+  }
 }
