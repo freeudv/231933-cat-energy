@@ -1,0 +1,45 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  z-index: 1;
+  width: 24px;
+  height: 18px;
+  font-size: 0;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  background-image: url("../img/icon-mobile-menu.svg");
+  cursor: pointer;
+}
+
+.main-nav__list {
+  @include ul;
+  text-align: center;
+}
+
+.main-nav__item {
+  background-color: $bg-white;
+  border-bottom: 1px solid $border-gray;
+
+  a {
+    display: block;
+    margin: 0 auto;
+    padding: 18px 0;
+    color: $text-black;
+  }
+
+  a[href] {
+    &:active {
+      color: rgba($text-black, 0.3);
+    }
+  }
+}
+
+.main-nav__logo {
+  border-bottom: 1px solid $border-gray;
+}

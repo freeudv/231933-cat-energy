@@ -1,0 +1,34 @@
+.social {
+  margin-bottom: 27px;
+  padding: 20px 0 10px;
+  text-align: center;
+  border: 1px solid $border-gray;
+}
+
+.social__list {
+  @include ul;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  margin: 0 auto;
+}
+
+/* .social__item {
+} */
+
+.social__link {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+/* .social__link--vkontakte {
+}
+
+.social__link--instagram {
+}
+
+.social__link--facebook {
+} */

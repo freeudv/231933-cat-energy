@@ -1,0 +1,17 @@
+.btn {
+  display: block;
+  padding: 11px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-white;
+  background-color: $accent-color;
+  outline: 0;
+  transition: 0.3s;
+
+  &:active {
+    color: rgba($text-white, 0.3);
+  }
+}
