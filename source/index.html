@@ -9,14 +9,14 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="logo main-nav__logo">
         <img class="logo-icon" src="./img/icon-logo-mobile.svg" width="33" height="38" alt="Cat Energy Logo">
         <img class="logo-image" src="./img/logo-mobile-header.svg" width="100" height="18" alt="Cat Energy">
       </a>
       <button class="main-nav__toggle" type="button">Окрыть меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
+      <ul class="main-nav__list main-nav__list--index">
+        <li class="main-nav__item main-nav__item--active">
           <a>Главная</a>
         </li>
         <li class="main-nav__item">
@@ -27,18 +27,17 @@
         </li>
       </ul>
     </nav>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Cat Energy - функциональное питание для котов</h1>
+
     <section class="promo">
       <div class="promo__wrapper">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <h3 class="promo__subtitle">Занялся собой? Займись котом!</h3>
-        <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Функциональное питание">
         <a href="form.html" class="promo__link btn">Подобрать программу</a>
       </div>
     </section>
-
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Cat Energy - функциональное питание для котов</h1>
     <section class="offers">
       <div class="offers__wrapper">
         <h2 class="offers__title visually-hidden">Наши предложения</h2>
@@ -74,24 +73,29 @@
 
     <section class="demo">
       <div class="demo__wrapper">
-        <h2 class="demo__title">Живой пример</h2>
-        <p class="demo__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих
-          тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <div class="demo__stats">
-          <div class="demo__counter">
-            <span class="demo__index">
-              <b>снижение веса</b>5кг</span>
-            <span class="demo__index">
-              <b>затрачено времени</b>60 дней</span>
+        <div class="demo__text-container">
+          <h2 class="demo__title">Живой пример</h2>
+          <p class="demo__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих
+            тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="demo__stats">
+            <div class="demo__counter">
+              <span class="demo__index">
+                <b>снижение веса</b>5кг</span>
+              <span class="demo__index">
+                <b>затрачено времени</b>60 дней</span>
+            </div>
+            <h3 class="demo__cost">Затраты на питание: 15 000 руб.</h3>
           </div>
-          <h3 class="demo__cost">Затраты на питание: 15 000 руб.</h3>
         </div>
-        <img class="demo__img" src="img/before-mobile@1x.png" width="310" height="230" alt="Пример действия программы">
-      </div>
-      <div class="demo__indicator indicator">
-        <button class="indicator__btn">Было</button>
-        <div class="indicator__line"></div>
-        <button class="indicator__btn">Стало</button>
+
+        <div class="demo__indicator indicator">
+          <img class="indicator__img" src="img/before-mobile@1x.png" width="310" height="230" alt="Пример действия программы">
+          <div class="indicator__control">
+            <button class="indicator__btn">Было</button>
+            <div class="indicator__line"></div>
+            <button class="indicator__btn">Стало</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -151,6 +155,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -47,7 +47,7 @@
   }
 
   .how-to__item {
-    width: 250px;
+    width: 245px;
     padding-top: 115px;
     padding-left: 0;
     margin-bottom: 80px;
@@ -62,5 +62,15 @@
 
   .how-to__item:nth-child(odd) {
     margin-right: 130px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .how-to__list {
+    justify-content: space-between;
+  }
+
+  .how-to__item:nth-child(odd) {
+    margin-right: 0;
   }
 }

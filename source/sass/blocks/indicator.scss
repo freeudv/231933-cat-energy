@@ -1,4 +1,8 @@
-.indicator {
+.indicator__img {
+  margin-bottom: 30px;
+}
+
+.indicator__control {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,7 +44,14 @@
 }
 
 @media #{$tablet-widths} {
-  .indicator {
+  .indicator__img {
+    width: 677px;
+    height: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .indicator__control {
     width: 570px;
   }
 
@@ -67,6 +78,7 @@
       background-color: $bg-white;
       border: 1px solid $border-gray;
       border-radius: 50%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
       transform: translate(-50%, -50%);
     }
 
