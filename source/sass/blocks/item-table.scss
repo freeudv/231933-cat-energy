@@ -3,6 +3,7 @@
   font-size: 12px;
   line-height: 16px;
   color: $text-dark;
+  border-collapse: collapse;
 }
 
 .item-table__name {
@@ -11,4 +12,20 @@
 
 .item-table__value {
   text-align: right;
+}
+
+@media #{$tablet-widths} {
+  .item-table {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .item-table tr {
+    border-bottom: 1px solid $catalog-border;
+  }
+
+  .item-table td {
+    padding: 7px 0;
+  }
 }
