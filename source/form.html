@@ -34,8 +34,11 @@
       <div class="request__wrapper">
         <h1 class="request__title">Подбор программы</h1>
         <p class="request__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </div>
 
-        <form class="request__form" method="post" action="https://echo.htmlacademy.ru">
+      <form class="request-form" method="post" action="https://echo.htmlacademy.ru">
+
+        <div class="request-form__questions">
           <fieldset class="request-form__who">
             <ul class="request-form__who-list">
               <li class="request-form__who-item">
@@ -69,8 +72,11 @@
               </li>
             </ul>
           </fieldset>
+        </div>
 
-          <fieldset class="request-form__contacts">
+
+        <fieldset class="request-form__contacts">
+          <div class="request-form__wrapper">
             <legend>Контактные данные (владельца кота)</legend>
             <ul class="request-form__contacts-list">
               <li class="request-form__contacts-item">
@@ -82,14 +88,18 @@
                 <input type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="request-form__comments">
+        <fieldset class="request-form__comments">
+          <div class="request-form__wrapper">
             <legend>Комментарий</legend>
             <textarea name="comment" id="comment" rows="6" cols="40" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="request-form__addition">
+        <fieldset class="request-form__addition">
+          <div class="request-form__wrapper">
             <legend>Дополнительно</legend>
             <ul class="request-form__addition-list">
               <li class="request-form__addition-item">
@@ -109,16 +119,18 @@
                 <label for="check1">Витамины</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </fieldset>
 
+        <div class="request-form__submit-wrapper">
           <button class="request-form__submit  btn" type="submit">Отправить заказ</button>
 
           <small class="request-form__required">
             <sup>*</sup> — Обязательные поля
           </small>
-        </form>
+        </div>
+      </form>
 
-      </div>
     </section>
 
     <section class="contacts">
