@@ -1,5 +1,13 @@
+.request-form input,
+.request-form textarea {
+  font-family: $font-stack-headers;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 .request-form__wrapper {
-  @include container;
+  @include accent-line;
 }
 
 .request-form__who {
@@ -52,12 +60,11 @@
 
 .request-form__contacts {
   @include fieldset;
-  @include accent-line;
+  @include container;
   position: relative;
   margin-top: 20px;
   padding: 20px 0;
   border: 0;
-  border-bottom: 1px solid $border-gray;
 }
 
 .request-form__contacts legend {
@@ -95,12 +102,11 @@
 }
 
 .request-form__comments {
-  @include accent-line;
+  @include container;
   position: relative;
   margin-top: 20px;
   padding: 20px 0;
   border: 0;
-  border-bottom: 1px solid $border-gray;
 }
 
 .request-form__comments legend {
@@ -120,7 +126,7 @@
 
 .request-form__addition {
   @include fieldset;
-  @include accent-line;
+  @include container;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px 0;
@@ -172,8 +178,9 @@
 
 @media #{$tablet-widths} {
   .request-form__wrapper {
-    padding: 0 35px 0 40px;
-    box-sizing: border-box;
+    &::after {
+      top: 25px;
+    }
   }
 
   .request-form__who {
@@ -199,11 +206,9 @@
   }
 
   .request-form__contacts {
+    padding: 0 35px 0 40px;
+    box-sizing: border-box;
     border: 0;
-
-    &::after {
-      top: 42px;
-    }
   }
 
   .request-form__contacts legend {
@@ -219,9 +224,8 @@
   }
 
   .request-form__comments {
-    &::after {
-      top: 42px;
-    }
+    padding: 0 35px 0 40px;
+    box-sizing: border-box;
   }
 
   .request-form__comments legend {
@@ -237,9 +241,8 @@
   }
 
   .request-form__addition {
-    &::after {
-      top: 42px;
-    }
+    padding: 0 35px 0 40px;
+    box-sizing: border-box;
   }
 
   .request-form__addition legend {
@@ -291,9 +294,9 @@
 }
 
 @media #{$desktop-widths} {
-  .request-form__wrapper {
-    padding: 0;
-  }
+  // .request-form__wrapper {
+  //   padding: 0;
+  // }
 
   .request-form__questions {
     @include container;
@@ -305,6 +308,16 @@
   .request-form__who,
   .request-form__target {
     width: 570px;
+    margin: 0;
+  }
+
+  .request-form__who-list,
+  .request-form__target-list {
+    margin: 0;
+  }
+
+  .request-form__contacts {
+    padding: 0;
   }
 
   .request-form__contacts-list {
@@ -316,6 +329,14 @@
   .request-form__contacts-item {
     margin: 0;
     width: 570px;
+  }
+
+  .request-form__comments {
+    padding: 0;
+  }
+
+  .request-form__addition {
+    padding: 0;
   }
 
   .request-form__addition-list {

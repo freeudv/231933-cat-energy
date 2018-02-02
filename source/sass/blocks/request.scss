@@ -1,14 +1,9 @@
-.request,
-.request input,
-.request textarea {
+.request {
+  padding: 30px 0 30px;
   font-family: $font-stack-headers;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-}
-
-.request {
-  padding: 30px 0 30px;
 }
 
 .request__wrapper {
