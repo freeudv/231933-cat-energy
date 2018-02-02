@@ -48,7 +48,7 @@ h1 {
 h2 {
   @include headers;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 38px;
 
   @media #{$tablet-widths} {
     font-size: 60px;
