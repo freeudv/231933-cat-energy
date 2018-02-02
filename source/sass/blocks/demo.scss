@@ -1,6 +1,6 @@
 .demo {
   position: relative;
-  padding: 30px 0 40px;
+  padding: 30px 0 37px;
 
   &::after {
     content: "";
@@ -19,7 +19,7 @@
 }
 
 .demo__title {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .demo__text {
@@ -31,7 +31,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 
 .demo__index {
@@ -56,14 +56,14 @@
   font-family: $font-stack-main;
   font-size: 12px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 14px;
   background-color: $bg-gray;
   text-transform: none;
   transform: translateX(-50%);
 }
 
 .demo__cost {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   text-align: center;
   text-transform: uppercase;
 }

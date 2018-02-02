@@ -12,14 +12,14 @@
 .offers__item {
   position: relative;
   background-color: $bg-gray;
-  padding: 40px 0 20px;
+  padding: 36px 0 16px;
   margin-bottom: 20px;
 
   &::before {
     content: "";
     position: absolute;
     top: 25px;
-    left: 20px;
+    left: 22px;
     width: 50px;
     height: 50px;
     background-color: $accent-color;
@@ -36,7 +36,7 @@
     content: "";
     position: absolute;
     top: 23px;
-    left: 28px;
+    left: 30px;
     width: 35px;
     height: 49px;
     background-image: url("../img/icon-cat-slim.svg");
@@ -47,8 +47,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 35px;
-    left: 10px;
+    top: 37px;
+    left: 13px;
     width: 67px;
     height: 28px;
     background-image: url("../img/icon-cat-pro.svg");
@@ -56,24 +56,24 @@
 }
 
 .offers__item-title {
-  margin-bottom: 38px;
+  margin-bottom: 34px;
   margin-left: 90px;
   font-family: $font-stack-headers;
-  font-size: 20px;
-  background-image: 24px;
+  font-size: 24px;
+  line-height: 28px;
   text-transform: uppercase;
 }
 
 .offers__item-text {
-  margin: 0 20px 20px;
-  padding-bottom: 25px;
+  margin: 0 20px 15px;
+  padding-bottom: 21px;
   border-bottom: 1px solid $border-gray;
 }
 
 .offer__link {
   position: relative;
   margin-left: 20px;
-  padding-right: 40px;
+  padding-right: 35px;
   font-size: 16px;
   line-height: 24px;
   color: $text-black;
