@@ -1,0 +1,365 @@
+.request-form input,
+.request-form textarea {
+  font-family: $font-stack-headers;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.request-form__wrapper {
+  @include accent-line;
+}
+
+.request-form__who {
+  @include fieldset;
+  @include container;
+  padding: 25px 0;
+  border: 0;
+}
+
+.request-form__who-list {
+  @include ul;
+}
+
+.request-form__who-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.request-form__who-item label {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.request-form__who-item input {
+  flex-grow: 1;
+  padding: 10px 20px;
+}
+
+.request-form__target {
+  @include fieldset;
+  padding: 20px 0;
+  border: 0;
+  border-top: 1px solid $border-gray;
+  border-bottom: 1px solid $border-gray;
+}
+
+.request-form__target-list {
+  @include ul;
+  @include container;
+}
+
+.request-form__target-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.request-form__contacts {
+  @include fieldset;
+  @include container;
+  position: relative;
+  margin-top: 20px;
+  padding: 20px 0;
+  border: 0;
+}
+
+.request-form__contacts legend {
+  @include before-box;
+  display: block;
+  width: 205px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: none;
+  background-color: $bg-white;
+}
+
+.request-form__contacts-list {
+  @include ul;
+}
+
+.request-form__contacts-item {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.request-form__contacts-item label {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.request-form__contacts-item input {
+  flex-grow: 1;
+}
+
+.request-form__comments {
+  @include container;
+  position: relative;
+  margin-top: 20px;
+  padding: 20px 0;
+  border: 0;
+}
+
+.request-form__comments legend {
+  @include before-box;
+  display: block;
+  width: 140px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: none;
+  background-color: $bg-white;
+}
+
+.request-form__comments textarea {
+  width: 100%;
+}
+
+.request-form__addition {
+  @include fieldset;
+  @include container;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  border: 0;
+}
+
+.request-form__addition legend {
+  @include before-box;
+  display: block;
+  width: 165px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: none;
+  background-color: $bg-white;
+}
+
+.request-form__addition-list {
+  @include ul;
+}
+
+.request-form__addition-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.request-form__submit-wrapper {
+  @include container;
+}
+
+.request-form__submit {
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: $font-stack-headers;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  border: 0;
+  outline: 0;
+}
+
+.request-form__required {
+  display: block;
+  font-family: $font-stack-main;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: none;
+}
+
+@media #{$tablet-widths} {
+  .request-form__wrapper {
+    &::after {
+      top: 25px;
+    }
+  }
+
+  .request-form__who {
+    padding: 50px 0;
+  }
+
+  .request-form__who-list {
+    margin: 0 40px;
+  }
+
+  .request-form__target {
+    @include container;
+    padding: 0;
+    border: 0;
+  }
+
+  .request-form__target-list {
+    width: auto;
+    padding: 30px 20px;
+    margin: 0 40px;
+    box-sizing: border-box;
+    border: 1px solid $border-gray;
+  }
+
+  .request-form__contacts {
+    padding: 0 35px 0 40px;
+    box-sizing: border-box;
+    border: 0;
+  }
+
+  .request-form__contacts legend {
+    width: 555px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 40px;
+
+    &::before {
+      left: -40px;
+      width: 40px;
+    }
+  }
+
+  .request-form__comments {
+    padding: 0 35px 0 40px;
+    box-sizing: border-box;
+  }
+
+  .request-form__comments legend {
+    width: 220px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 40px;
+
+    &::before {
+      left: -40px;
+      width: 40px;
+    }
+  }
+
+  .request-form__addition {
+    padding: 0 35px 0 40px;
+    box-sizing: border-box;
+  }
+
+  .request-form__addition legend {
+    width: 255px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 40px;
+
+    &::before {
+      left: -40px;
+      width: 40px;
+    }
+  }
+
+  .request-form__addition-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .request-form__addition-item {
+    width: 285px;
+  }
+
+  .request-form__addition-item:nth-child(odd) {
+    margin-right: 60px;
+  }
+
+  .request-form__submit-wrapper {
+    padding: 0 35px 0 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .request-form__submit {
+    width: 283px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .request-form__required {
+    width: 288px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+}
+
+@media #{$desktop-widths} {
+  // .request-form__wrapper {
+  //   padding: 0;
+  // }
+
+  .request-form__questions {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .request-form__who,
+  .request-form__target {
+    width: 570px;
+    margin: 0;
+  }
+
+  .request-form__who-list,
+  .request-form__target-list {
+    margin: 0;
+  }
+
+  .request-form__contacts {
+    padding: 0;
+  }
+
+  .request-form__contacts-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .request-form__contacts-item {
+    margin: 0;
+    width: 570px;
+  }
+
+  .request-form__comments {
+    padding: 0;
+  }
+
+  .request-form__addition {
+    padding: 0;
+  }
+
+  .request-form__addition-list {
+    justify-content: space-between;
+  }
+
+  .request-form__addition-item {
+    width: 245px;
+  }
+
+  .request-form__addition-item:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .request-form__submit-wrapper {
+    padding: 0;
+  }
+
+  .request-form__submit {
+    width: 570px;
+  }
+
+  .request-form__required {
+    width: 570px;
+  }
+}

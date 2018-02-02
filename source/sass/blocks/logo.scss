@@ -19,3 +19,14 @@
 .logo--footer .logo-icon {
   display: none;
 }
+
+@media #{$tablet-widths} {
+  .logo {
+    width: 175px;
+    text-align: right;
+  }
+
+  .logo-icon {
+    left: 0;
+  }
+}

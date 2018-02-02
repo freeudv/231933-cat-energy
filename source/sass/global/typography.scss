@@ -1,17 +1,4 @@
-html,
 body {
-  height: 100%;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
   font-family: $font-stack-main;
   font-size: 14px;
   line-height: 18px;
@@ -19,6 +6,11 @@ body {
   font-style: normal;
   color: $text-black;
   background-color: $bg-white;
+
+  @media #{$tablet-widths} {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 a {
@@ -28,10 +20,11 @@ a {
   line-height: 30px;
   text-decoration: none;
   text-transform: uppercase;
-}
 
-.visually-hidden {
-  display: none;
+  @media #{$tablet-widths} {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @mixin headers {
@@ -47,29 +40,19 @@ h1 {
   line-height: 48px;
 
   @media #{$tablet-widths} {
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  @media #{$desktop-widths} {
-    font-size: 53px;
-    line-height: 57px;
+    font-size: 60px;
+    line-height: 68px;
   }
 }
 
 h2 {
   @include headers;
   font-size: 36px;
-  line-height: 48px;
+  line-height: 40px;
 
   @media #{$tablet-widths} {
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  @media #{$desktop-widths} {
-    font-size: 53px;
-    line-height: 57px;
+    font-size: 60px;
+    line-height: 68px;
   }
 }
 
@@ -77,4 +60,9 @@ h3 {
   @include headers;
   font-size: 14px;
   line-height: 18px;
+
+  @media #{$tablet-widths} {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

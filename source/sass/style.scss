@@ -3,6 +3,7 @@
 @import "./global/fonts";
 @import "./global/variables";
 @import "./global/mixins";
+@import "./global/scaffolding";
 @import "./global/typography";
 
 // common blocks
@@ -13,18 +14,21 @@
 
 //index sections
 @import "./blocks/promo";
-@import "./blocks/offers.scss";
-@import "./blocks/how-to.scss";
-@import "./blocks/demo.scss";
-@import "./blocks/indicator.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/page-footer.scss";
-@import "./blocks/social.scss";
-@import "./blocks/copyright.scss";
+@import "./blocks/offers";
+@import "./blocks/how-to";
+@import "./blocks/demo";
+@import "./blocks/indicator";
+@import "./blocks/contacts";
+@import "./blocks/page-footer";
+@import "./blocks/social";
+@import "./blocks/copyright";
 
 //catalog sections
-@import "./blocks/catalog.scss";
-@import "./blocks/item-table.scss";
-@import "./blocks/show-more.scss";
-@import "./blocks/addition.scss";
-@import "./blocks/request.scss";
+@import "./blocks/catalog";
+@import "./blocks/item-table";
+@import "./blocks/show-more";
+@import "./blocks/addition";
+
+//form sections
+@import "./blocks/request";
+@import "./blocks/request-form";

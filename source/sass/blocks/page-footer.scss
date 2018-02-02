@@ -1,5 +1,6 @@
 .page-footer {
   padding: 30px 0 20px;
+  color: $text-dark;
   background-color: $bg-gray;
 }
 
@@ -17,3 +18,20 @@
 /*
 .page-footer__copyright {
 } */
+
+@media #{$tablet-widths} {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .page-footer__social {
+    margin-bottom: 0;
+  }
+}

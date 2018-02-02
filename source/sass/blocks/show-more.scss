@@ -17,6 +17,7 @@
 }
 
 .show-more__text {
+  margin: 0;
   margin-bottom: 30px;
   font-size: 12px;
   line-height: 16px;
@@ -27,4 +28,52 @@
   line-height: 20px;
   background-color: $bg-gray;
   color: $text-btn;
+}
+
+@media #{$tablet-widths} {
+  .show-more {
+    width: 324px;
+    margin-top: 140px;
+    padding: 30px 40px 40px;
+    box-sizing: border-box;
+    border: 1px solid $border-gray;
+  }
+
+  .show-more__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .show-more__title {
+    margin-bottom: 30px;
+    padding: 110px 50px 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .show-more__text {
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .show-more__link {
+    margin-top: auto;
+  }
+}
+
+@media #{$desktop-widths} {
+  .show-more {
+    width: 254px;
+  }
+
+  .show-more__title {
+    padding: 110px 10px 0;
+  }
+
+  .show-more__text {
+    padding: 0;
+  }
 }

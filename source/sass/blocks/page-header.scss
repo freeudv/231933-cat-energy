@@ -1,2 +1,14 @@
 /* .page-header {
 } */
+
+@media #{$tablet-widths} {
+  .page-header {
+    padding-top: 30px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .page-header {
+    position: relative;
+  }
+}

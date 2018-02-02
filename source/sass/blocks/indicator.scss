@@ -1,4 +1,8 @@
-.indicator {
+.indicator__img {
+  margin-bottom: 30px;
+}
+
+.indicator__control {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,7 +13,7 @@
 
 .indicator__btn {
   display: block;
-
+  padding: 0;
   font-family: $font-stack-headers;
   font-size: 16px;
   line-height: 20px;
@@ -27,7 +31,7 @@
   border: 1px solid $border-gray;
   border-radius: 7px;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     top: 3px;
@@ -36,5 +40,55 @@
     height: 6px;
     background-color: $accent-color;
     border-radius: 3px;
+  }
+}
+
+@media #{$tablet-widths} {
+  .indicator__img {
+    width: 677px;
+    height: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .indicator__control {
+    width: 570px;
+  }
+
+  .indicator__btn {
+    font-size: 20px;
+    line-height: 26px;
+    border-bottom: 1px dotted #b8b8b8;
+  }
+
+  .indicator__line {
+    width: 430px;
+    height: 6px;
+    background-color: $indicator-gray;
+    border: 0;
+    border-radius: 3px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 32px;
+      height: 32px;
+      background-color: $bg-white;
+      border: 1px solid $border-gray;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
