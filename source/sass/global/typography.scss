@@ -1,17 +1,4 @@
-html,
 body {
-  height: 100%;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
   font-family: $font-stack-main;
   font-size: 14px;
   line-height: 18px;
@@ -40,22 +27,6 @@ a {
   }
 }
 
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 @mixin headers {
   font-family: $font-stack-headers;
   font-weight: 400;
@@ -72,11 +43,6 @@ h1 {
     font-size: 60px;
     line-height: 68px;
   }
-
-  @media #{$desktop-widths} {
-    font-size: 53px;
-    line-height: 57px;
-  }
 }
 
 h2 {
@@ -87,11 +53,6 @@ h2 {
   @media #{$tablet-widths} {
     font-size: 60px;
     line-height: 68px;
-  }
-
-  @media #{$desktop-widths} {
-    font-size: 53px;
-    line-height: 57px;
   }
 }
 

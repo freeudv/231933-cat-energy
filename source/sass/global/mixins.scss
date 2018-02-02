@@ -43,3 +43,32 @@
     width: 1220px;
   }
 }
+
+@mixin accent-line {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: $accent-color;
+    z-index: -1;
+  }
+}
+
+@mixin before-box {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    width: 20px;
+    background-color: $bg-white;
+  }
+}

@@ -52,26 +52,16 @@
 
 .request-form__contacts {
   @include fieldset;
+  @include accent-line;
   position: relative;
   margin-top: 20px;
   padding: 20px 0;
   border: 0;
   border-bottom: 1px solid $border-gray;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 35px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background-color: $accent-color;
-    z-index: -1;
-  }
 }
 
 .request-form__contacts legend {
-  position: relative;
+  @include before-box;
   display: block;
   width: 205px;
   margin-bottom: 40px;
@@ -79,16 +69,6 @@
   line-height: 30px;
   text-transform: none;
   background-color: $bg-white;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -20px;
-    width: 20px;
-    background-color: $bg-white;
-  }
 }
 
 .request-form__contacts-list {
@@ -115,27 +95,16 @@
 }
 
 .request-form__comments {
-  @include fieldset;
+  @include accent-line;
   position: relative;
   margin-top: 20px;
   padding: 20px 0;
   border: 0;
   border-bottom: 1px solid $border-gray;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 35px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background-color: $accent-color;
-    z-index: -1;
-  }
 }
 
 .request-form__comments legend {
-  position: relative;
+  @include before-box;
   display: block;
   width: 140px;
   margin-bottom: 30px;
@@ -143,16 +112,6 @@
   line-height: 30px;
   text-transform: none;
   background-color: $bg-white;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -20px;
-    width: 20px;
-    background-color: $bg-white;
-  }
 }
 
 .request-form__comments textarea {
@@ -161,26 +120,15 @@
 
 .request-form__addition {
   @include fieldset;
-  position: relative;
+  @include accent-line;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px 0;
   border: 0;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 35px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background-color: $accent-color;
-    z-index: -1;
-  }
 }
 
 .request-form__addition legend {
-  position: relative;
+  @include before-box;
   display: block;
   width: 165px;
   margin-bottom: 30px;
@@ -188,16 +136,6 @@
   line-height: 30px;
   text-transform: none;
   background-color: $bg-white;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -20px;
-    width: 20px;
-    background-color: $bg-white;
-  }
 }
 
 .request-form__addition-list {
