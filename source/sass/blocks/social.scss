@@ -14,27 +14,31 @@
   margin: 0 auto;
 }
 
-/* .social__item {
-} */
-
 .social__link {
   display: inline-block;
   vertical-align: middle;
   font-size: 0;
 }
 
-/* .social__link--vkontakte {
-}
-
-.social__link--instagram {
-}
-
-.social__link--facebook {
-} */
-
 @media #{$tablet-widths} {
   .social {
     margin-bottom: 0;
+    padding: 13px 0 6px;
     border: 0;
+  }
+
+  .social__link--vkontakte img {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--instagram img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--facebook img {
+    width: 14px;
+    height: 28px;
   }
 }

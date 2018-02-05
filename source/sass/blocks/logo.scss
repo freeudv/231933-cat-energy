@@ -11,6 +11,11 @@
   left: 20px;
 }
 
+.logo-image {
+  width: 100px;
+  height: 18px;
+}
+
 .logo--footer .logo-image {
   width: 128px;
   height: 24px;
@@ -27,6 +32,11 @@
   }
 
   .logo-icon {
-    left: 0;
+    display: none;
+  }
+
+  .logo-image {
+    width: 173px;
+    height: 58px;
   }
 }

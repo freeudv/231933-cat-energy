@@ -17,6 +17,10 @@
 }
 
 @media #{$tablet-widths} {
+  .page-footer {
+    padding: 37px 0 20px;
+  }
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -26,6 +30,7 @@
   .page-footer__logo {
     text-align: left;
     margin-bottom: 0;
+    width: 155px;
   }
 
   .page-footer__social {

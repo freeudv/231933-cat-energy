@@ -29,15 +29,71 @@
     height: 60px;
     background-color: $accent-color;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.how-to__item--leaf {
+  &::after {
+    background-image: url("../img/advantage-leaf@1x.png");
+
+    @media #{$retina} {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: 50px 50px;
+    }
+  }
+}
+
+.how-to__item--powder {
+  &::after {
+    background-image: url("../img/advantage-powder@1x.png");
+
+    @media #{$retina} {
+      background-image: url("../img/advantage-powder@2x.png");
+      background-size: 50px 50px;
+    }
+  }
+}
+
+.how-to__item--dining {
+  &::after {
+    background-image: url("../img/advantage-dining@1x.png");
+
+    @media #{$retina} {
+      background-image: url("../img/advantage-dining@2x.png");
+      background-size: 50px 50px;
+    }
+  }
+}
+
+.how-to__item--clock {
+  &::after {
+    background-image: url("../img/advantage-clock@1x.png");
+
+    @media #{$retina} {
+      background-image: url("../img/advantage-clock@2x.png");
+      background-size: 50px 50px;
+    }
+  }
 }
 
 @media #{$tablet-widths} {
   .how-to {
-    padding: 50px 0 60px;
+    padding: 0;
+    padding-top: 45px;
   }
 
   .how-to__title {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
 
   .how-to__list {
@@ -47,14 +103,20 @@
   }
 
   .how-to__item {
-    width: 245px;
-    padding-top: 115px;
+    width: 255px;
+    padding-top: 112px;
     padding-left: 0;
-    margin-bottom: 80px;
+    margin-bottom: 133px;
+    line-height: 24px;
 
     &::before {
       top: 0;
       left: 0;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
       width: 80px;
       height: 80px;
     }

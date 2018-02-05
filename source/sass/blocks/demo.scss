@@ -63,7 +63,7 @@
 }
 
 .demo__cost {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -74,7 +74,9 @@
 
 @media #{$tablet-widths} {
   .demo {
-    padding: 50px 0 60px;
+    margin-top: -31px;
+    padding: 42px 0 69px;
+    border-top: 1px solid $border-gray;
 
     &::after {
       top: auto;
@@ -83,12 +85,17 @@
   }
 
   .demo__title {
-    margin-bottom: 70px;
+    margin-bottom: 63px;
   }
 
   .demo__text {
     margin-bottom: 55px;
     padding-right: 10px;
+    line-height: 24px;
+  }
+
+  .demo__text-container {
+    margin-bottom: 52px;
   }
 
   .demo__stats {
@@ -104,7 +111,7 @@
 
   .demo__index {
     width: 160px;
-    padding: 20px 0;
+    padding: 14px 0;
     font-size: 30px;
     line-height: 38px;
   }
